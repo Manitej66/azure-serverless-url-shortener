@@ -1,0 +1,14 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "func start",
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {
+    "mongoose": "^5.12.3",
+    "nanoid": "^3.1.22"
+  },
+  "devDependencies": {}
+}
