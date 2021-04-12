@@ -11,6 +11,11 @@ const LinkSchema = new m.Schema({
     required: true,
     default: () => nanoid(6),
   },
+  clicks: {
+    type: Number,
+    required: true,
+    default: 0,
+  },
 });
 
 module.exports = m.model("Links", LinkSchema);

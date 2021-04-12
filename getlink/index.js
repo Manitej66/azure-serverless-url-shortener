@@ -13,6 +13,9 @@ module.exports = async function (context, req) {
     response = await Links.findOne({
       shortUrl: url,
     }).exec();
+
+    response.clicks++;
+    await response.save();
   } catch (error) {
     response = error;
   }
